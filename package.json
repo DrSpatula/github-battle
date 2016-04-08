@@ -1,0 +1,24 @@
+{
+  "name": "github-battle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "serve": "webpack-dev-server --watch-poll --host 0.0.0.0 --port 8000",
+      "production": "webpack -p"
+  },
+  "author": "Seamus O'Keefe <okeefe77@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.15.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
