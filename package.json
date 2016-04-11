@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "serve": "webpack-dev-server --watch-poll --host 0.0.0.0 --port 8000",
-      "production": "webpack -p"
+    "serve": "webpack-dev-server --watch-poll --host 0.0.0.0 --port 8000",
+    "production": "webpack -p"
   },
   "author": "Seamus O'Keefe <okeefe77@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react-dom": "^15.0.0",
+    "react-router": "^2.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.5",
