@@ -7,7 +7,8 @@ var React = require('react'),
 
 var Main = require('../components/Main'),
     Home = require('../components/Home'),
-    PromptContainer = require('../containers/PromptContainer');
+    PromptContainer = require('../containers/PromptContainer'),
+    ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
 
 
 var routes = (
@@ -16,6 +17,7 @@ var routes = (
            <IndexRoute component={Home} /> 
            <Route path='PlayerOne' header='Player One' component={PromptContainer} />
            <Route path='PlayerTwo/:playerOne' header='Player Two' component={PromptContainer} />
+           <Route path='Battle' component={ConfirmBattleContainer} />
         </Route>
     </Router>
 );
