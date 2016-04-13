@@ -1,6 +1,7 @@
 var React = require('react')
     PropTypes = React.PropTypes,
     Link = require('react-router').Link,
+    MainContainer = require('../components/MainContainer'),
     UserDetails = require('../components/UserDetails'),
     UserDetailsWrapper = require('../components/UserDetailsWrapper'),
     styles = require('../styles');
@@ -15,7 +16,7 @@ var ConfirmBattle = function(props) {
     // Conditional Rendering:
     return props.isLoading === true
         ? <p> LOADING! </p>
-        : <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
+        : <MainContainer>
             <h1>Confirm Players</h1>
             <div className="col-sm-8 col-sm-offset-2">
                 <UserDetailsWrapper header="Player One">
@@ -39,7 +40,7 @@ var ConfirmBattle = function(props) {
                     </Link>
                 </div>
             </div>
-          </div>
+          </MainContainer>
 };
 
 
