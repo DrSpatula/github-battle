@@ -4,18 +4,14 @@ var React = require('react')
     MainContainer = require('../components/MainContainer'),
     UserDetails = require('../components/UserDetails'),
     UserDetailsWrapper = require('../components/UserDetailsWrapper'),
+    Loading = require('../components/Loading'),
     styles = require('../styles');
-
-
-var vomit = function(object) {
-    return <pre>{JSON.stringify(object, null, ' ')}</pre>
-}
 
 
 var ConfirmBattle = function(props) {
     // Conditional Rendering:
     return props.isLoading === true
-        ? <p> LOADING! </p>
+        ? <Loading />
         : <MainContainer>
             <h1>Confirm Players</h1>
             <div className="col-sm-8 col-sm-offset-2">

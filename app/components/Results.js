@@ -4,6 +4,7 @@ var React = require('react'),
     MainContainer = require('../components/MainContainer'),
     UserDetails = require('../components/UserDetails'),
     UserDetailsWrapper = require('../components/UserDetailsWrapper'),
+    Loading = require('../components/Loading'),
     styles = require('../styles');
 
 
@@ -18,9 +19,19 @@ var StartOver = function() {
 };
 
 
+var Tie = function(props) {
+    return (
+        <MainContainer>
+            <h1>It's a Tie!</h1>
+            <StartOver />
+        </MainContainer>
+    )
+};
+
+
 var Results = function(props) {
     if (props.isLoading === true) {
-        return <p>Loading...</p>
+        return <Loading />
     }
 
     if (props.scores[0] === props.scores[1]) {
